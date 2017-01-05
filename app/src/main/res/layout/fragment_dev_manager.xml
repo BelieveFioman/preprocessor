@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_input_dev_1"
+        android:layout_width="150px"
+        android:layout_height="24px"
+        android:layout_marginLeft="76px"
+        android:layout_marginTop="60px"
+        android:text="4-20mA输入设备"
+        android:textColor="#212121"
+        android:textSize="18px"/>
+
+    <TextView
+        android:id="@+id/tv_channel_num"
+        android:layout_width="80px"
+        android:layout_height="32px"
+        android:layout_below="@+id/tv_input_dev_1"
+        android:layout_marginLeft="111px"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:text="通道数量:"
+        android:textColor="#5f6468"
+        android:textSize="16px"/>
+
+    <EditText
+        android:id="@+id/et_channel_num"
+        android:layout_width="170px"
+        android:layout_height="32px"
+        android:layout_below="@+id/tv_input_dev_1"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@+id/tv_channel_num"
+        android:background="@drawable/rect_gray_small"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/tv_input_dev_2"
+        android:layout_width="150px"
+        android:layout_height="24px"
+        android:layout_below="@id/et_channel_num"
+        android:layout_marginLeft="76px"
+        android:layout_marginTop="20px"
+        android:text="RS485输入设备"
+        android:textColor="#212121"
+        android:textSize="18px"/>
+
+    <TextView
+        android:id="@+id/tv_485_address"
+        android:layout_width="80px"
+        android:layout_height="32px"
+        android:layout_below="@+id/tv_input_dev_2"
+        android:layout_marginLeft="111px"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:text="地址范围:"
+        android:textColor="#212121"
+        android:textSize="16px"/>
+
+    <EditText
+        android:id="@+id/et_RS485_address_from"
+        android:layout_width="170px"
+        android:layout_height="32px"
+        android:layout_below="@+id/tv_input_dev_2"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@+id/tv_channel_num"
+        android:background="@drawable/rect_gray_small"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/tv_symbol_1"
+        android:layout_width="wrap_content"
+        android:layout_height="32px"
+        android:layout_below="@id/tv_input_dev_2"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/et_RS485_address_from"
+        android:gravity="center_vertical"
+        android:text="~ ~"
+        android:textColor="#212121"
+        android:textSize="16px"/>
+
+    <EditText
+        android:id="@+id/et_RS485_address_to"
+        android:layout_width="170px"
+        android:layout_height="32px"
+        android:layout_below="@+id/tv_input_dev_2"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="20px"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/tv_symbol_1"
+        android:background="@drawable/rect_gray_small"/>
+
+    <TextView
+        android:id="@+id/tv_input_dev_3"
+        android:layout_width="150px"
+        android:layout_height="24px"
+        android:layout_below="@id/tv_485_address"
+        android:layout_marginLeft="76px"
+        android:layout_marginTop="20px"
+        android:text="RS485输入设备"
+        android:textColor="#212121"
+        android:textSize="18px"/>
+
+    <TextView
+        android:id="@+id/tv_TCP_address"
+        android:layout_width="80px"
+        android:layout_height="32px"
+        android:layout_below="@+id/tv_input_dev_2"
+        android:layout_marginLeft="111px"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:text="地址范围:"
+        android:textColor="#5f6468"
+        android:textSize="16px"/>
+
+    <EditText
+        android:id="@+id/et_tcp_address_from"
+        android:layout_width="170px"
+        android:layout_height="32px"
+        android:layout_below="@+id/tv_input_dev_3"
+        android:singleLine="true"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@+id/tv_channel_num"
+        android:background="@drawable/rect_gray_small"/>
+
+    <TextView
+        android:id="@+id/tv_symbol_2"
+        android:layout_width="wrap_content"
+        android:layout_height="32px"
+        android:layout_below="@id/tv_input_dev_3"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/et_RS485_address_from"
+        android:gravity="center_vertical"
+        android:text="~ ~"
+        android:textColor="#212121"
+        android:textSize="16px"/>
+
+    <EditText
+        android:id="@+id/et_tcp_address_to"
+        android:layout_width="170px"
+        android:layout_height="32px"
+        android:layout_below="@+id/tv_input_dev_3"
+        android:layout_marginLeft="10px"
+        android:singleLine="true"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@+id/tv_symbol_2"
+        android:background="@drawable/rect_gray_small"/>
+
+    <Button
+        android:id="@+id/btn_dev_change"
+        android:layout_width="140px"
+        android:layout_height="36px"
+        android:layout_alignLeft="@+id/et_tcp_address_from"
+        android:layout_below="@+id/et_tcp_address_from"
+        android:layout_marginTop="70px"
+        android:background="@drawable/rect_red"
+        android:gravity="center"
+        android:text="修改"
+        android:textColor="#ffffff"
+        android:textSize="18px"/>
+
+    <Button
+        android:id="@+id/btn_dev_save"
+        android:layout_width="140px"
+        android:layout_height="36px"
+        android:layout_alignLeft="@+id/et_tcp_address_to"
+        android:layout_below="@+id/et_tcp_address_from"
+        android:layout_marginTop="70px"
+        android:background="@drawable/rect_red"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:textSize="18px"/>
+
+
+</RelativeLayout>

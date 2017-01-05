@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_two"
+        android:layout_width="406px"
+        android:layout_height="280px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="38px"
+        android:layout_toRightOf="@id/relative_one"
+        android:background="@drawable/rect_gray">
+
+        <TextView
+            android:id="@+id/iv_alert_two"
+            android:layout_width="92px"
+            android:layout_height="30px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="30px"
+            android:background="@mipmap/tv_normal_bg"
+            android:gravity="center"
+            android:text="示数正常"
+            android:textColor="#ffffff"
+            android:textSize="16px"
+            />
+
+        <TextView
+            android:id="@+id/tv_receive_data_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="20.950"
+            android:textColor="#212121"
+            android:textSize="50px"/>
+
+        <View
+            android:id="@+id/view_line6"
+            android:layout_width="380px"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_receive_data_two"
+            android:layout_marginLeft="13px"
+            android:layout_marginTop="50px"
+            android:background="#8c8c8c"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view_line6"
+            android:layout_marginLeft="13px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="传感器 O2"
+                android:textColor="#212121"
+                android:textSize="16px"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="40px"
+                android:layout_gravity="center_vertical"
+                android:background="#8c8c8c"/>
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="单位 %VOL"
+                android:textColor="#212121"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_one"
+        android:layout_width="406px"
+        android:layout_height="280px"
+        android:layout_alignTop="@+id/relative_two"
+        android:layout_marginLeft="80px"
+        android:background="@drawable/rect_gray">
+
+        <ImageView
+            android:id="@+id/iv_alert"
+            android:layout_width="33px"
+            android:layout_height="40px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="25px"
+            android:src="@mipmap/ic_alert"/>
+
+        <TextView
+            android:id="@+id/tv_receive_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="20.950"
+            android:textColor="#ed4e2a"
+            android:textSize="50px"/>
+
+        <View
+            android:id="@+id/view_line5"
+            android:layout_width="380px"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_receive_data"
+            android:layout_marginLeft="13px"
+            android:layout_marginTop="50px"
+            android:background="#8c8c8c"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view_line5"
+            android:layout_marginLeft="13px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="传感器 O2"
+                android:textColor="#212121"
+                android:textSize="16px"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="40px"
+                android:layout_gravity="center_vertical"
+                android:background="#8c8c8c"/>
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="单位 %VOL"
+                android:textColor="#212121"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

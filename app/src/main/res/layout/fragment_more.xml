@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="329px">
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="329px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13px"
+        android:layout_marginRight="13px"
+        android:layout_marginTop="34px"
+        android:horizontalSpacing="14px"
+        android:numColumns="4"
+        android:verticalSpacing="13px">
+    </GridView>
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_alert_setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="42px"
+        android:background="@mipmap/alert_setting_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="设备地址"
+            android:textColor="#ffffff"
+            android:textSize="16px"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="30px"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff"/>
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="传感器"
+            android:textColor="#ffffff"
+            android:textSize="16px"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="30px"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff"/>
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="一级报警"
+            android:textColor="#ffffff"
+            android:textSize="16px"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="30px"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff"/>
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="二级报警"
+            android:textColor="#ffffff"
+            android:textSize="16px"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="30px"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff"/>
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="三级报警"
+            android:textColor="#ffffff"
+            android:textSize="16px"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="30px"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff"/>
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="单位"
+            android:textColor="#ffffff"
+            android:textSize="16px"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="30px"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff"/>
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="报警输出"
+            android:textColor="#ffffff"
+            android:textSize="16px"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="30px"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff"/>
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="报警模式"
+            android:textColor="#ffffff"
+            android:textSize="16px"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lsv_alert_setting"
+        android:layout_width="match_parent"
+        android:layout_height="354px"
+        android:layout_below="@id/linear_alert_setting_title"
+        android:background="@drawable/rect_pink"
+        android:paddingBottom="1px"
+        android:paddingLeft="1px"
+        android:paddingRight="1px"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74px"
+        android:layout_below="@+id/lsv_alert_setting"
+        android:layout_marginTop="25px"
+        android:background="@mipmap/alert_setting_bottom_bg">
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="400px"
+            android:gravity="center|left"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="15px"
+            android:text="注:AL和AH值可以通过报警模式栏的设置进行修改"
+            android:textColor="#ed4e2a"
+            android:textSize="16px"/>
+
+        <TextView
+            android:id="@+id/list_page_1"
+            android:layout_width="wrap_content"
+            android:layout_height="34px"
+            android:layout_marginLeft="420px"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="第"
+            android:textColor="#212121"
+            android:textSize="16px"/>
+
+        <TextView
+            android:id="@+id/list_page"
+            android:layout_width="wrap_content"
+            android:layout_height="34px"
+            android:layout_marginLeft="5px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/list_page_1"
+            android:gravity="center_vertical"
+            android:text="1/6"
+            android:textColor="#212121"
+            android:textSize="16px"/>
+
+        <TextView
+            android:id="@+id/list_page_2"
+            android:layout_width="wrap_content"
+            android:layout_height="34px"
+            android:layout_marginLeft="10px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/list_page"
+            android:gravity="center_vertical"
+            android:text="页"
+            android:textColor="#212121"
+            android:textSize="16px"/>
+
+        <Button
+            android:id="@+id/btn_list_pre"
+            android:background="@drawable/image_page_disable"
+            android:layout_width="90px"
+            android:layout_height="34px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@id/list_page_2"
+            android:gravity="center"
+            android:text="上一页"
+            android:textColor="#ffffff"
+            android:textSize="16px"/>
+        <Button
+            android:id="@+id/btn_list_next"
+            android:background="@drawable/image_page_enable"
+            android:layout_width="90px"
+            android:layout_height="34px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@id/btn_list_pre"
+            android:gravity="center"
+            android:text="下一页"
+            android:textColor="#ffffff"
+            android:textSize="16px"/>
+
+    </RelativeLayout>
+</RelativeLayout>

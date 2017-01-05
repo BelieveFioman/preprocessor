@@ -1,0 +1,70 @@
+<resources>
+    <string name="point">.</string>
+    <string name="app_name">CL100N</string>
+    <string name="noticeone">1,报警设置里"单位"不可更改,只能在设备分区里进行"量程"和"单位"的修改</string>
+    <string name="noticetwo">2,设备分区里,只有4-20mA的设备，才可以修改"量程"和"单位"</string>
+    <string name="noticethree">注：AL和AH值需要通过报警模式栏修改</string>
+    <string name="noticefour">注：只有4-20MA的输入设备,才可以进行校准</string>
+    <string name="aboutme">深圳市科尔诺电子科技有限公司(www.szken.com)专注于：易燃易爆、有毒有害气体检测
+报警仪、气体报警探测器、复合气体分析仪、红外气体传感器、紫外气体传感器、激光气体
+传感器、火灾探测器、及其它相关专业检测设备的专业制造商，是集研发、设计、生产制造、
+销售和服务于一体的高新技术公司，公司致力于成为国内最专业的环境检测设备、高端的传
+感器及系统解决方案供应商。
+
+        \n\n公司建立了完善的营销和服务网络，其产品广泛应用于：石油、化工、消防、燃气、船舶、
+卫生防疫、环境监测、能源电力、冶金铸造、木材加工，粮食储藏、烟草熏蒸、工业喷涂、
+污水处理、科研实验等领域。自主研发和生产基地，1600平方米的自动老化标定生产车间、
+先进的装配生产线，生产规模及品质控制在国内同行业居于先进水平。
+        \n\n\n\n\n联系电话：86 0755 18126547930
+        \n移动电话：18126547930
+        \n传\t\t真：86 0755 86110165-555
+        \n地\t\t址：中国 广东 深圳市宝安区留芳路6号庭威产业园1号楼4楼E
+        \n邮\t\t编：518102
+        \n公司主页：http://szken.com \t\t https://guan53273797.1688.com
+
+
+    </string>
+    <string name="aboutmy">公司建立了完善的营销和服务网络，其产品广泛应用于：石油、化工、消防、燃气、船舶、
+卫生防疫、环境监测、能源电力、冶金铸造、木材加工，粮食储藏、烟草熏蒸、工业喷涂、
+污水处理、科研实验等领域。自主研发和生产基地，1600平方米的自动老化标定生产车间、
+先进的装配生产线，生产规模及品质控制在国内同行业居于先进水平。
+</string>
+
+    <string name="callphone">联系电话：86 0755 18126547930</string>
+    <string name="phone">移动电话：18126547930</string>
+    <string name="chuanzhen">传      真：86 0755 86110165-555</string>
+    <string name="adress">地      址：中国 广东 深圳市宝安区留芳路6号庭威产业园1号楼4楼E</string>
+    <string name="youbian">邮      编：518102</string>
+    <string name="zhuye">公司主页：http://szken.com/ </string>
+    <string name="zhuye1">https://guan53273797.1688.com </string>
+    <!-- 波特率 -->
+    <string-array name="bot">
+        <item>9600</item>
+        <item>Custom</item>
+        <item>110</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>2400</item>
+        <item>4800</item>
+        <item>14400</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>43000</item>
+        <item>56000</item>
+        <item>57600</item>
+        <item>115200</item>
+        <item>128000</item>
+        <item>256000</item>
+    </string-array>
+
+    <!-- 效验 -->
+    <string-array name="xiaoyan">
+        <item>无效验</item>
+        <item>偶效验</item>
+        <item>奇效验</item>
+    </string-array>
+
+    <string name="temperature_sign">°C</string>
+    <string name="humidity_sign">%RH</string>
+</resources>

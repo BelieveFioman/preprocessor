@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    tools:context="com.keernuo.dn9000.prefrocessor.activity.SettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_back"
+        android:layout_width="match_parent"
+        android:layout_height="64px">
+
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="36px"
+            android:background="#f0f0f0"
+            android:src="@drawable/btn_back_selector"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35px"
+            android:text="10:30:24"
+            android:textColor="#000000"
+            android:textSize="18px"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/relative_back"
+        android:background="#d2d2d2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="520px"
+        android:layout_below="@id/relative_back">
+
+        <RadioGroup
+            android:id="@+id/radio_settings"
+            android:layout_width="240px"
+            android:layout_height="match_parent"
+            android:background="#aaffffff"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/btn_basic_setting"
+                android:layout_width="240px"
+                android:layout_height="48px"
+                android:background="@drawable/btn_bg_selector"
+                android:checked="true"
+                android:drawableLeft="@drawable/btn_basic_setting_selector"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:paddingLeft="50px"
+                android:text="基本设置"
+                android:textColor="@color/btn_color_selector"
+                android:textSize="18px"/>
+
+            <View
+                android:layout_width="200px"
+                android:layout_height="1px"
+                android:layout_gravity="center_horizontal"
+                android:background="#d2d2d2"/>
+
+            <RadioButton
+                android:id="@+id/btn_alert_setting"
+                android:layout_width="240px"
+                android:layout_height="48px"
+                android:background="@drawable/btn_bg_selector"
+                android:drawableLeft="@drawable/btn_alert_setting_selector"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:paddingLeft="50px"
+                android:text="报警设置"
+                android:textColor="@color/btn_color_selector"
+                android:textSize="18px"/>
+
+            <View
+                android:layout_width="200px"
+                android:layout_height="1px"
+                android:layout_gravity="center_horizontal"
+                android:background="#d2d2d2"/>
+
+            <RadioButton
+                android:id="@+id/btn_device_manager"
+                android:layout_width="240px"
+                android:layout_height="48px"
+                android:background="@drawable/btn_bg_selector"
+                android:drawableLeft="@drawable/btn_device_manager_selector"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:paddingLeft="50px"
+                android:text="设备管理"
+                android:textColor="@color/btn_color_selector"
+                android:textSize="18px"/>
+
+            <View
+                android:layout_width="200px"
+                android:layout_height="1px"
+                android:layout_gravity="center_horizontal"
+                android:background="#d2d2d2"/>
+
+            <RadioButton
+                android:id="@+id/btn_device_adjust"
+                android:layout_width="240px"
+                android:layout_height="48px"
+                android:background="@drawable/btn_bg_selector"
+                android:drawableLeft="@drawable/btn_device_correct_selector"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:paddingLeft="50px"
+                android:text="设备校准"
+                android:textColor="@color/btn_color_selector"
+                android:textSize="18px"/>
+
+            <View
+                android:layout_width="200px"
+                android:layout_height="1px"
+                android:layout_gravity="center_horizontal"
+                android:background="#d2d2d2"/>
+
+            <RadioButton
+                android:id="@+id/btn_history_data"
+                android:layout_width="240px"
+                android:layout_height="48px"
+                android:background="@drawable/btn_bg_selector"
+                android:drawableLeft="@drawable/btn_history_data_selector"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:paddingLeft="50px"
+                android:text="历史数据"
+                android:textColor="@color/btn_color_selector"
+                android:textSize="18px"/>
+
+            <View
+                android:layout_width="200px"
+                android:layout_height="1px"
+                android:layout_gravity="center_horizontal"
+                android:background="#d2d2d2"/>
+
+            <RadioButton
+                android:id="@+id/btn_data_save"
+                android:layout_width="240px"
+                android:layout_height="48px"
+                android:background="@drawable/btn_bg_selector"
+                android:drawableLeft="@drawable/btn_data_keep_selector"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:paddingLeft="50px"
+                android:text="数据存储设置"
+                android:textColor="@color/btn_color_selector"
+                android:textSize="18px"/>
+
+            <View
+                android:layout_width="200px"
+                android:layout_height="1px"
+                android:layout_gravity="center_horizontal"
+                android:background="#d2d2d2"/>
+
+            <RadioButton
+                android:id="@+id/btn_data_print"
+                android:layout_width="240px"
+                android:layout_height="48px"
+                android:background="@drawable/btn_bg_selector"
+                android:drawableLeft="@drawable/btn_data_print_selector"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:paddingLeft="50px"
+                android:text="数据打印设置"
+                android:textColor="@color/btn_color_selector"
+                android:textSize="18px"/>
+
+            <View
+                android:layout_width="200px"
+                android:layout_height="1px"
+                android:layout_gravity="center_horizontal"
+                android:background="#d2d2d2"/>
+
+            <RadioButton
+                android:id="@+id/btn_sms_alert"
+                android:layout_width="240px"
+                android:layout_height="48px"
+                android:background="@drawable/btn_bg_selector"
+                android:drawableLeft="@drawable/btn_sms_alert_selector"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:paddingLeft="50px"
+                android:text="短信报警设置"
+                android:textColor="@color/btn_color_selector"
+                android:textSize="18px"/>
+
+            <View
+                android:layout_width="200px"
+                android:layout_height="1px"
+                android:layout_gravity="center_horizontal"
+                android:background="#d2d2d2"/>
+
+            <RadioButton
+                android:id="@+id/btn_about_us"
+                android:layout_width="240px"
+                android:layout_height="48px"
+                android:background="@drawable/btn_bg_selector"
+                android:drawableLeft="@drawable/btn_about_us_selector"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:paddingLeft="50px"
+                android:text="关于我们"
+                android:textColor="@color/btn_color_selector"
+                android:textSize="18px"/>
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/fragment_setting_content"
+            android:clickable="true"
+            android:layout_width="753px"
+            android:layout_height="506px"
+            android:layout_margin="15px"
+            android:layout_toRightOf="@id/radio_settings"
+            android:background="#ffffff"/>
+
+    </RelativeLayout>
+</RelativeLayout>

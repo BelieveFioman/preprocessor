@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:drop="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_device_address"
+        android:layout_width="500px"
+        android:layout_height="35px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="设备地址 :"
+            android:textColor="#212121"
+            android:textSize="16px"/>
+
+        <com.keernuo.preprocessor.view.IPEditText
+            android:id="@+id/et_device_address"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/edit_bg_gray"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_baud_rate"
+        android:layout_width="500px"
+        android:layout_height="35px"
+        android:layout_below="@+id/linear_device_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="波特率 :"
+            android:textColor="#212121"
+            android:textSize="16px"/>
+
+        <com.keernuo.preprocessor.view.DropEditText
+            android:id="@+id/et_bound_rate"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/edit_bg_gray">
+
+        </com.keernuo.preprocessor.view.DropEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_date_setting"
+        android:layout_width="500px"
+        android:layout_height="35px"
+        android:layout_below="@+id/linear_baud_rate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="日期设置 :"
+            android:textColor="#212121"
+            android:textSize="16px"/>
+
+        <EditText
+            android:id="@+id/et_date_setting"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/edit_bg_gray"
+            android:clickable="true"
+            android:paddingLeft="10px"
+            android:singleLine="true"
+            android:text="2016-12-12"
+            android:textColor="#212121"
+            android:textSize="15px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_time_setting"
+        android:layout_width="500px"
+        android:layout_height="35px"
+        android:layout_below="@+id/linear_date_setting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="时间设置 :"
+            android:textColor="#212121"
+            android:textSize="16px"/>
+
+        <EditText
+            android:id="@+id/et_time_setting"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/edit_bg_gray"
+            android:clickable="true"
+            android:paddingLeft="10px"
+            android:singleLine="true"
+            android:text="16:24:56"
+            android:textColor="#212121"
+            android:textSize="15px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_password_change"
+        android:layout_width="500px"
+        android:layout_height="35px"
+        android:layout_below="@+id/linear_time_setting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="修改密码 :"
+            android:textColor="#212121"
+            android:textSize="16px"/>
+
+        <RelativeLayout
+            android:id="@+id/relative_password_change"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/edit_bg_gray">
+
+            <EditText
+                android:id="@+id/et_password_chage"
+                android:layout_width="300px"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingLeft="10px"
+                android:singleLine="true"
+                android:text="9600"
+                android:textColor="#212121"
+                android:textSize="15px"/>
+
+            <ImageView
+                android:id="@+id/iv_password_isVisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10px"
+                android:paddingRight="1px"
+                android:src="@drawable/password_isvisiable_selector"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="108px"
+        android:layout_height="35px"
+        android:layout_alignRight="@+id/linear_password_change"
+        android:layout_below="@+id/linear_password_change"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="40px"
+        android:background="@drawable/btn_save_selector"
+        android:text="保存"
+        android:textColor="#ffffff"
+        android:textSize="17px"/>
+
+</RelativeLayout>

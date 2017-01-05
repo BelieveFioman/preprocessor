@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="43px"
+              android:minHeight="43px"
+              android:background="#ffffff"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_device_address"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="8001"
+        android:textColor="#212121"
+        android:textSize="14px"/>
+
+    <TextView
+        android:id="@+id/tv_sensor"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="EX"
+        android:textColor="#212121"
+        android:textSize="14px"/>
+
+    <TextView
+        android:id="@+id/tv_Aoel_value"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="10.00"
+        android:textColor="#212121"
+        android:textSize="14px"/>
+
+    <TextView
+        android:id="@+id/tv_measure_unit"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="PPM"
+        android:textColor="#212121"
+        android:textSize="14px"/>
+
+    <ImageButton
+        android:id="@+id/ibtn_dev_adjust"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_height="30px"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:src="@mipmap/image_dev_adjust"
+        android:textColor="#ed4e2a"
+        android:textSize="14px"/>
+</LinearLayout>

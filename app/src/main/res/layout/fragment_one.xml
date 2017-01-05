@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/dv_alert"
+        android:layout_width="33px"
+        android:layout_height="40px"
+        android:layout_marginLeft="709px"
+        android:layout_marginTop="80px"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_alert_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="760px"
+        android:layout_marginTop="85px"
+        android:gravity="center"
+        android:text="(AH高报警)"
+        android:textColor="#ed4e2a"
+        android:textSize="18px"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_alert_normal"
+        android:layout_width="92px"
+        android:layout_height="30px"
+        android:layout_marginLeft="709px"
+        android:layout_marginTop="80px"
+        android:background="@mipmap/tv_normal_bg"
+        android:gravity="center"
+        android:text="示数正常"
+        android:textColor="#ffffff"
+        android:textSize="16px"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_receive_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="20.950"
+        android:textSize="111px"/>
+
+    <View
+        android:id="@+id/view_line3"
+        android:layout_width="828px"
+        android:layout_height="1px"
+        android:layout_below="@+id/tv_receive_data"
+        android:layout_marginLeft="102px"
+        android:layout_marginTop="20px"
+        android:background="#9b9b9b"/>
+
+    <LinearLayout
+        android:id="@+id/linear_content"
+        android:layout_width="828px"
+        android:layout_height="80px"
+        android:layout_alignLeft="@id/view_line3"
+        android:layout_below="@id/view_line3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="传感器"
+            android:textColor="#212121"
+            android:textSize="26px"/>
+
+        <TextView
+            android:id="@+id/tv_sensor_one"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="O2"
+            android:textColor="#212121"
+            android:textSize="26px"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="50px"
+            android:layout_gravity="center_vertical"
+            android:background="#9b9b9b"/>
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="单位"
+            android:textColor="#212121"
+            android:textSize="26px"/>
+
+        <TextView
+            android:id="@+id/tv_unit_one"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="%VOL"
+            android:textColor="#212121"
+            android:textSize="26px"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line4"
+        android:layout_width="828px"
+        android:layout_height="1px"
+        android:layout_below="@+id/linear_content"
+        android:layout_marginLeft="102px"
+        android:background="#9b9b9b"/>
+
+</RelativeLayout>

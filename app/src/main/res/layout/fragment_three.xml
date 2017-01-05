@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_one"
+        android:layout_width="260px"
+        android:layout_height="332px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="87px"
+        android:background="@drawable/rect_gray">
+
+        <TextView
+            android:id="@+id/iv_alert"
+            android:layout_width="92px"
+            android:layout_height="30px"
+            android:layout_marginLeft="17px"
+            android:layout_marginTop="28px"
+            android:background="@mipmap/tv_normal_bg"
+            android:gravity="center"
+            android:text="示数正常"
+            android:textColor="#ffffff"
+            android:textSize="16px"/>
+
+        <TextView
+            android:id="@+id/tv_receive_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="20.950"
+            android:textColor="#212121"
+            android:textSize="50px"/>
+
+        <View
+            android:id="@+id/view_line5"
+            android:layout_width="236px"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_receive_data"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="30px"
+            android:background="#8c8c8c"/>
+
+        <LinearLayout
+            android:id="@+id/linear_sensor"
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:layout_below="@id/view_line5"
+            android:layout_marginLeft="13px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="传感器"
+                android:textColor="#212121"
+                android:textSize="15px"/>
+
+
+            <TextView
+                android:id="@+id/tv_sensor"
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="O2"
+                android:textColor="#212121"
+                android:textSize="15px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liear_unit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view_line5"
+            android:layout_marginLeft="13px"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="单位"
+                android:textColor="#212121"
+                android:textSize="15px"/>
+
+
+            <TextView
+                android:id="@+id/tv_unit"
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="%VOL"
+                android:textColor="#212121"
+                android:textSize="15px"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_two"
+        android:layout_width="260px"
+        android:layout_height="332px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px"
+        android:layout_toRightOf="@+id/relative_one"
+        android:background="@drawable/rect_gray">
+
+        <TextView
+            android:id="@+id/iv_alert_three"
+            android:layout_width="92px"
+            android:layout_height="30px"
+            android:layout_marginLeft="17px"
+            android:layout_marginTop="28px"
+            android:background="@mipmap/tv_normal_bg"
+            android:gravity="center"
+            android:text="示数正常"
+            android:textColor="#ffffff"
+            android:textSize="16px"/>
+
+        <TextView
+            android:id="@+id/tv_receive_data_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="20.950"
+            android:textColor="#212121"
+            android:textSize="50px"/>
+
+        <View
+            android:id="@+id/view_line6"
+            android:layout_width="236px"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_receive_data_two"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="30px"
+            android:background="#8c8c8c"/>
+
+        <LinearLayout
+            android:id="@+id/linear_sensor_two"
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:layout_below="@id/view_line6"
+            android:layout_marginLeft="13px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="传感器"
+                android:textColor="#212121"
+                android:textSize="15px"/>
+
+
+            <TextView
+                android:id="@+id/tv_sensor_two"
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="O2"
+                android:textColor="#212121"
+                android:textSize="15px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liear_unit_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view_line6"
+            android:layout_marginLeft="13px"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="单位"
+                android:textColor="#212121"
+                android:textSize="15px"/>
+
+
+            <TextView
+                android:id="@+id/tv_unit_two"
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="%VOL"
+                android:textColor="#212121"
+                android:textSize="15px"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_three"
+        android:layout_width="260px"
+        android:layout_height="332px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px"
+        android:layout_toRightOf="@+id/relative_two"
+        android:background="@drawable/rect_gray">
+        
+        <ImageView
+            android:id="@+id/iv_alert_show"
+            android:src="@mipmap/ic_alert"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="24px"
+            android:layout_width="33px"
+            android:layout_height="40px"
+            />
+        <TextView
+            android:id="@+id/iv_alert_two"
+            android:layout_width="92px"
+            android:layout_height="30px"
+            android:layout_marginLeft="17px"
+            android:layout_marginTop="28px"
+            android:background="@mipmap/tv_normal_bg"
+            android:gravity="center"
+            android:text="示数正常"
+            android:textColor="#ffffff"
+            android:textSize="16px"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_receive_data_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="20.950"
+            android:textColor="#ed4e2a"
+            android:textSize="50px"/>
+
+        <View
+            android:id="@+id/view_line7"
+            android:layout_width="236px"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_receive_data_three"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="30px"
+            android:background="#8c8c8c"/>
+
+        <LinearLayout
+            android:id="@+id/linear_sensor_three"
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:layout_below="@id/view_line7"
+            android:layout_marginLeft="13px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="传感器"
+                android:textColor="#212121"
+                android:textSize="15px"/>
+
+
+            <TextView
+                android:id="@+id/tv_sensor_three"
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="O2"
+                android:textColor="#212121"
+                android:textSize="15px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liear_unit_three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view_line7"
+            android:layout_marginLeft="13px"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="单位"
+                android:textColor="#212121"
+                android:textSize="15px"/>
+
+            <TextView
+                android:id="@+id/tv_unit_three"
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="%VOL"
+                android:textColor="#212121"
+                android:textSize="15px"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
